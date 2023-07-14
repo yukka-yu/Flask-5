@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Users</title>
+</head>
+<body>
+    {% for user in users %}
+        <div class="col-12 col-md-6 col-lg-4">
+            <h2>{{user.name}}</h2> 
+            <p>{{user.email}}</p>
+        </div>
+    {% endfor %}
+    <button>Add user</button>
+</body>
+</html>
